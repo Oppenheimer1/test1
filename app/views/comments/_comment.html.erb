@@ -2,14 +2,14 @@
   <strong>Commenter:</strong>
   <%= comment.commenter %>
 </p>
- 
+
 <p>
   <strong>Comment:</strong>
   <%= comment.body %>
 </p>
 
 <p>
- Speed : <%= rating_for @comment, "fun", :star => 10 %>
+ Speed : <%= rating_for comment, "fun", :star => 10 %>
 </p>
 
 <p>
