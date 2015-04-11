@@ -4,6 +4,4 @@ class Article < ActiveRecord::Base
   validates :title, presence: true,
                     length: { minimum: 5 }
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
-
-  ratyrate_rater
 end
